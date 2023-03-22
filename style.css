@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #7a5034;
+  --primary-bright-color: #b5a290;
+  --primary-dark-color: #5c301a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  margin: 20px 100px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 30px;
+  transition-duration: 50ms;
+  transition-property: color;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar a:first-child {
+  margin-right: 0;
+}
+
+.navbar a:last-child {
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  margin: 0;
+  margin-inline-start: auto;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition-duration: 50ms;
+  transition-property: color, background-color;
+  border: 1px solid var(--primary-color);
+}
+
+.navbar a:last-child:hover {
+  color: var(--primary-color);
+  background-color: white;
+}
+
+/* Header */
+
+.header {
+  margin: 50px auto;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.header .highlighted {
+  color: var(--primary-color);
+}
+
+.header .header-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  width: 150px;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid var(--primary-color);
+  transition-duration: 100ms;
+  transition-property: transform;
+  transition-timing-function: ease;
+}
+
+.header .header-buttons a:nth-child(2) {
+  color: var(--primary-color);
+  background-color: transparent;
+  border-radius: 100px;
+  margin-inline-start: 20px;
+}
+
+.header .header-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.header .header-image {
+  object-position: center;
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 15px solid var(--primary-color);
+}
+
+/* Section Card */
+.section-card {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 50px;
+  overflow: hidden;
+  color: white;
+}
+
+.section-card .section-card-image {
+  height: 100%;
+  width: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.section-card .section-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+.section-card h1 {
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.section-card h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-card .section-card-button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  width: 150px;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid white;
+  transition-duration: 100ms;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+}
+
+.section-card .section-card-button:hover {
+  background-color: white;
+}
+
+.section-card:nth-of-type(1) {
+  background-color: var(--primary-bright-color);
+}
+
+.section-card:nth-of-type(1) .section-card-button:hover {
+  color: var(--primary-bright-color);
+}
+
+.section-card:nth-of-type(2) {
+  background-color: var(--primary-dark-color);
+}
+
+.section-card:nth-of-type(2) .section-card-button:hover {
+  color: var(--primary-dark-color);
+}
+
+.section-card:nth-of-type(3) {
+  background-color: var(--primary-color);
+}
+
+.section-card:nth-of-type(3) .section-card-button:hover {
+  color: var(--primary-color);
+}
+
+.section-card:nth-of-type(4) {
+  background-color: var(--primary-bright-color);
+}
+
+.section-card:nth-of-type(4) .section-card-button:hover {
+  color: var(--primary-bright-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .copyright-notice {
+  padding: 10px 20px;
+  border-radius: 20px 0 0 0;
+  background-color: var(--primary-color);
+  color: white;
+}
